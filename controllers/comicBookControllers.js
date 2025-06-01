@@ -1,0 +1,1 @@
+const ComicBook = require("../models/comicBookModel");
