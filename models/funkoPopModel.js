@@ -19,9 +19,17 @@ const funkoPopSchema = new Schema({
         type: String,
         required: true,
     },
+    imageURL: {
+        type: String,
+        required: true,
+    },
       price: {
         type: Number,
         required: true,
-        min:.99,
+        min:.01,
     }
-})
+});
+
+const FunkoPop = mongoose.model("FunkoPop", funkoPopSchema);
+
+module.exports = FunkoPop;

@@ -24,7 +24,7 @@ const getComicBook = async (request, response, next) => {
     const comicBook = ComicBook.findById(_id);
 
     if (!comicBook) {
-      throw new Error("Unable to find comic book.");
+      throw new Error("Unable to find the comic book.");
     }
 
     return response.status(200).json({
