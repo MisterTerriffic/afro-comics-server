@@ -2,7 +2,7 @@ require("dotenv").config();
 require("./config/connection"); 
 require("./config/authStrategy"); 
 const express = require("express");
-const PORT = 3000;
+const PORT = process.env.port;
 const app = express();
 
 const helmet = require("helmet");
