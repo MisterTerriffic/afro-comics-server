@@ -3,6 +3,7 @@ require("./config/connection");
 require("./config/authStrategy"); 
 const express = require("express");
 const PORT = 3000;
+const app = express();
 
 const helmet = require("helmet");
 const morgan = require("morgan");
@@ -16,8 +17,6 @@ const path = require("node:path");
 app.use(express.json());
 app.use(express.static(path.join(__dirname)));
 app.use(express.urlencoded());
-
-const app = express();
 
 const comicBookRoutes = require("./routes/comicBookRoutes");
 const funkoPopRoutes = require("./routes/funkoPopRoutes");

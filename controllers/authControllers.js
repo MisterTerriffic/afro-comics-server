@@ -61,4 +61,4 @@ const localLogin = async (request, response, next) => {
   });
 };
 
-module.exports();
+module.exports = { register, login, localLogin, logout };

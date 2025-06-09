@@ -12,3 +12,5 @@ router.post("/create/new", createComicBook);
 router.put("/update/:_id", updateComicBook);
 
 router.delete("/delete/:_id", deleteComicBook);
+
+module.exports = router;

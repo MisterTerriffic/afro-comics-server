@@ -12,3 +12,5 @@ router.post("/create/new", createFunkoPop);
 router.put("/update/:_id", updateFunkoPop);
 
 router.delete("/delete/:_id", deleteFunkoPop);
+
+module.exports = router;

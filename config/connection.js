@@ -7,7 +7,7 @@ async function main() {
     console.log("MongoDB database is connected");
   } catch (error) {
     console.error(`There was an error connecting to the database: ${error}`);
-    next(error);
+    // next(error);
   }
 }
 
