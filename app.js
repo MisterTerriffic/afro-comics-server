@@ -18,6 +18,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname)));
 app.use(express.urlencoded());
 
+const authRoutes = require("./routes/authRoutes");
 const comicBookRoutes = require("./routes/comicBookRoutes");
 const funkoPopRoutes = require("./routes/funkoPopRoutes");
 const graphicNovelRoutes = require("./routes/graphicNovelRoutes");
