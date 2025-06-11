@@ -9,7 +9,7 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 const cors = require("cors");
 
-app.use(cors());
+app.use(cors(({credentials: true, origin: true})));
 app.use(morgan("combined"));
 app.use(helmet());
 
